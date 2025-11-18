@@ -33,8 +33,6 @@ public class PlayerMovement : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        transform.Rotate(Vector3.up, 180.0f, Space World);
-    }
-
-    
+        transform.Rotate(Vector3.up, -180.0f, Space.World);
+    }    
 }
