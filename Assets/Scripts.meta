@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 07d32bdfc19f03c48991cf7b4ba7290c
+=======
+guid: 553dc2a7ba0349f4582a308e5e6c5dfe
+>>>>>>> origin/Feature-VolteoPlayerJoseAndres
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

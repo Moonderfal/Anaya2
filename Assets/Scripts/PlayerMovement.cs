@@ -20,5 +20,21 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rigidbody.linearVelocity = new Vector2(moveDirection * maxSpeed, rigidbody.linearVelocity.y);
+        if (moveDirection > 0.0f && !facingRight)
+        {
+            Flip();
+        }else if (moveDirection < 0.0f && facingRight)
+        {
+            Flip();
+        }
     }
+
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(Vector3.up, 180.0f, Space World);
+    }
+
+    
 }
